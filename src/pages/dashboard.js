@@ -16,11 +16,11 @@ export default function Dashboard() {
 
       <header className={styles.header}>
         <div className={styles.logo}>Budget Buddy</div>
-        <nav className={styles.nav}>
-          <Link href="/">Home</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/about">About Us</Link>
-          <Link href="/login">Login</Link>
+        <nav>
+          <Link href="/" className={styles.navLink}>Home</Link>
+          <Link href="/contact" className={styles.navLink}>Contact</Link>
+          <Link href="/about" className={styles.navLink}>About Us</Link>
+          <Link href="/login" className={styles.navLink}>Login</Link>
         </nav>
       </header>
 
@@ -102,3 +102,4 @@ export default function Dashboard() {
     </>
   );
 }
+
