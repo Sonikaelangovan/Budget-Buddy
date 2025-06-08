@@ -26,7 +26,7 @@ export default function Contact() {
   };
 
   return (
-    <div className={styles.body}>
+    <div className={styles.container}>
       <header className={styles.header}>
         <div className={styles.logo}>Budget Buddy</div>
         <nav className={styles.navLinks}>
