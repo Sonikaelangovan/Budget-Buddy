@@ -1,4 +1,4 @@
-import styles from '../styles/about.module.css';
+import styles from '../styles/About.module.css';
 import Head from 'next/head';
 
 export default function About() {
