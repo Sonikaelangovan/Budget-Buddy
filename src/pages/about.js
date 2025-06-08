@@ -12,7 +12,7 @@ export default function About() {
         />
       </Head>
 
-      <div className={styles.body}>
+      <div className={styles.containe}>
         <header className={styles.header}>
           <div className={styles.logo}>Budget Buddy</div>
           <nav className={styles.navLinks}>
