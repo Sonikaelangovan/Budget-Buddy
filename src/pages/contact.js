@@ -18,7 +18,6 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic HTML5 validation
     if (formData.name && formData.email && formData.message) {
       alert("Your message has been submitted successfully!");
       setFormData({ name: '', email: '', message: '' });
@@ -38,9 +37,9 @@ export default function Contact() {
       </header>
 
       <section className={styles.contactSection}>
-        <h1>Contact Us</h1>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Your Name</label>
+        <h1 className={styles.contactSectionTitle}>Contact Us</h1>
+        <form onSubmit={handleSubmit} className={styles.formContainer}>
+          <label htmlFor="name" className={styles.label}>Your Name</label>
           <input
             type="text"
             id="name"
@@ -48,9 +47,10 @@ export default function Contact() {
             onChange={handleChange}
             placeholder="Enter your name"
             required
+            className={styles.input}
           />
 
-          <label htmlFor="email">Your Email</label>
+          <label htmlFor="email" className={styles.label}>Your Email</label>
           <input
             type="email"
             id="email"
@@ -58,9 +58,10 @@ export default function Contact() {
             onChange={handleChange}
             placeholder="Enter your email"
             required
+            className={styles.input}
           />
 
-          <label htmlFor="message">Your Message</label>
+          <label htmlFor="message" className={styles.label}>Your Message</label>
           <textarea
             id="message"
             rows="6"
@@ -68,20 +69,22 @@ export default function Contact() {
             onChange={handleChange}
             placeholder="Write your message here..."
             required
+            className={styles.textarea}
           ></textarea>
 
-          <button type="submit">Send Message</button>
+          <button type="submit" className={styles.button}>Send Message</button>
         </form>
 
         <div className={styles.info}>
           <p>You can also reach us at <strong>support@budgetbuddy.com</strong></p>
-          <p>or call us at <strong>‪+91 98765 43210‬</strong></p>
+          <p>or call us at <strong>+91 98765 43210</strong></p>
         </div>
       </section>
 
       <footer className={styles.footer}>
         &copy; 2025 Budget Buddy. All rights reserved.
       </footer>
-    </div>
-  );
+    </div>
+  );
 }
+
