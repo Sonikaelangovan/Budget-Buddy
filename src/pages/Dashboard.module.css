@@ -1,4 +1,4 @@
-header {
+.header {
   background-color: #4f46e5;
   color: white;
   padding: 1.5rem 2rem;
@@ -13,7 +13,7 @@ header {
   font-weight: 700;
 }
 
-nav a {
+.navLink {
   color: white;
   margin-left: 1.5rem;
   text-decoration: none;
@@ -21,7 +21,7 @@ nav a {
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+.navLink:hover {
   color: #c7d2fe;
 }
 
@@ -71,12 +71,13 @@ nav a:hover {
 .amount {
   margin-left: auto;
   font-weight: 700;
-  color: #dc2626; /* red */
+  color: #dc2626;
 }
 
 .upcomingBills ul {
   list-style: none;
   margin-top: 1rem;
+  padding: 0;
 }
 
 .upcomingBills li {
@@ -115,4 +116,5 @@ nav a:hover {
     transform: translateY(0);
   }
 }
+
 
